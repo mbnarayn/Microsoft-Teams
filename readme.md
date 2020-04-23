@@ -41,6 +41,11 @@ What we’re doing in the above example is retrieving all users who have a custo
 
 The above command can be modified to Filter on any of the settings that Get-OsOnline user returns.
 
+**Assingn a Custom Teams Messaging Policy**
+
+Get-CsOnlineUser -Filter {Department -eq 'Business'} | Grant-CsTeamsMessagingPolicy -PolicyName "Your Policy Name"
+
+What we’re doing in the above example is assign all users in the Business department a custom Teams Messaging Policy. Replace "Your Policy Name" with the name of your custom policy.
 
 ## Microsoft Teams PowerShell Cmdlets
 
