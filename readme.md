@@ -16,10 +16,9 @@ The Skype for Business PowerShell module contains the cmdlets to manage policies
 
 **Connecting via the Skype for Business PowerShell Module**
 
-    Import-Module SkypeOnlineConnector
-    $userCredential = Get-Credential
-    $sfbSession = New-CsOnlineSession -Credential $userCredential
-    Import-PSSession $sfbSession
+Import-Module SkypeOnlineConnector
+$sfbSession = New-CsOnlineSession
+Import-PSSession $sfbSession
     
 **Get Detailed Teams Configuration Information**
 
