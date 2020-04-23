@@ -33,6 +33,18 @@ It includes information around any custom policies that may have been assigned t
 
 `Get-CsOnlineUser -Identity JoeBlogs@domain.co.uk`
 
+**Get All Users Who Have a Custom Teams Messaging Policy Assingned (Name of the Policy Needs to be Specified)**
+
+`Get-CsOnlineUser -Filter {TeamsMessagingPolicy -eq 'Policy Name'} | Select UserPrincipalName`
+
+What we’re doing in the above example is retrieving all users who have a custom Teams Messaging policy. Replace Policy Name with the name of your custom policy.
+
+The above command can be modified to Filter on any of the settings that Get-OsOnline user returns.
+
+**Types of Teams Policies**
+
+Messaging policies are used to control what chat and channel messaging features are available to users in Teams. You can use the Global (Or-wide default) policy or create one or more custom messaging policies for people in your organization.
+
 
 
 ## Microsoft Teams PowerShell Cmdlets
