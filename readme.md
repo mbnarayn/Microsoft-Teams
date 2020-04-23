@@ -56,6 +56,6 @@ The Connect-MicrosoftTeams cmdlet connects an authenticated account to use for M
 
 
 
-## Types of Teams Policies
+# Types of Teams Policies
 
 Messaging policies are used to control what chat and channel messaging features are available to users in Teams. You can use the Global (Or-wide default) policy or create one or more custom messaging policies for people in your organization.
