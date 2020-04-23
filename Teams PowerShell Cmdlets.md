@@ -4,7 +4,7 @@ The PowerShell Cmdlets for managing Microsoft Teams service are split between tw
 
 ### Microsoft Teams PowerShell Module
 
-The Teams PowerShell module contains all the cmdlets you need to create and manage teams.The Teams PowerShell module can be installed by running the PowerShellGet command below.
+The Teams PowerShell module contains all the cmdlets you need to create and manage teams. The Teams PowerShell module can be installed by running the PowerShellGet command below.
 
 `Install-Module -Name MicrosoftTeams`
 
@@ -21,13 +21,13 @@ The Skype for Business PowerShell module contains the cmdlets to manage policies
     $sfbSession = New-CsOnlineSession -Credential $userCredential
     Import-PSSession $sfbSession
     
-**Get Detailed Teams Configuration Information** 
+**Get Detailed Teams Configuration Information**
+
+`Get-CsOnlineUser`
 
 The Get-CsOnlineUser cmdlet returns information about users who have accounts homed on Skype for Business Online. The returned information includes standard Active Directory account information (such as the department the user works in, his or her address and phone number, etc.) as well as Teams and Skype for Business Server 2015 specific information: the Get-CsOnlineUser cmdlet returns information about such things as whether or not the user has been enabled for Enterprise Voice and which per-user policies (if any) have been assigned to the user.
 
 It includes information around any custom policies that may have been assigned to the users. The policies field is blank if only the default global policies are assigned.
-
-`Get-CsOnlineUser`
 
 **Get Detailed Teams Configuration Information for a Specific User**
 
@@ -40,9 +40,6 @@ It includes information around any custom policies that may have been assigned t
 What we’re doing in the above example is retrieving all users who have a custom Teams Messaging policy. Replace Policy Name with the name of your custom policy.
 
 The above command can be modified to Filter on any of the settings that Get-OsOnline user returns.
-
-
-
 
 
 ## Microsoft Teams PowerShell Cmdlets
