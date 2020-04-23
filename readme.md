@@ -41,7 +41,7 @@ What we’re doing in the above example is retrieving all users who have a custo
 
 The above command can be modified to Filter on any of the settings that Get-OsOnline user returns.
 
-**Assingn a Custom Teams Messaging Policy**
+**Assign a Custom Teams Messaging Policy**
 
 `Get-CsOnlineUser -Filter {Department -eq 'Business'} | Grant-CsTeamsMessagingPolicy -PolicyName "Your Policy Name"`
 
@@ -54,6 +54,10 @@ What we’re doing in the above example is assign all users in the Business depa
 `Connect-MicrosoftTeams`
 
 The Connect-MicrosoftTeams cmdlet connects an authenticated account to use for Microsoft Teams cmdlet requests. You can use this authenticated account only with Microsoft Teams cmdlets.
+
+**Get a List of all Teams in the Organisation**
+
+`Get-Team`
 
 **Get all Teams that a User belongs to**
 
