@@ -31,7 +31,7 @@ It includes information around any custom policies that may have been assigned t
 
 **Get Detailed Teams Configuration Information for a Specific User**
 
-`Get-CsOnlineUser -Identity JoeBlogs@domain.co.uk`
+`Get-CsOnlineUser -Identity JoeBloggs@domain.co.uk`
 
 **Get All Users Who Have a Custom Teams Messaging Policy Assingned (Name of the Policy Needs to be Specified)**
 
@@ -41,9 +41,7 @@ What we’re doing in the above example is retrieving all users who have a custo
 
 The above command can be modified to Filter on any of the settings that Get-OsOnline user returns.
 
-**Types of Teams Policies**
 
-Messaging policies are used to control what chat and channel messaging features are available to users in Teams. You can use the Global (Or-wide default) policy or create one or more custom messaging policies for people in your organization.
 
 
 
@@ -51,3 +49,16 @@ Messaging policies are used to control what chat and channel messaging features 
 
 **Connecting via the Microsoft Teams PowerShell Module**
 
+`Connect-MicrosoftTeams`
+
+The Connect-MicrosoftTeams cmdlet connects an authenticated account to use for Microsoft Teams cmdlet requests. You can use this authenticated account only with Microsoft Teams cmdlets.
+
+**Get all Teams that a User belongs to**
+
+`Get-Team -User JoeBloggs@domain.co.uk`
+
+
+
+## Types of Teams Policies
+
+Messaging policies are used to control what chat and channel messaging features are available to users in Teams. You can use the Global (Or-wide default) policy or create one or more custom messaging policies for people in your organization.
