@@ -1,5 +1,23 @@
 # Managing Microsoft Teams via PowerShell
 
+The latest Teams PowerShell public release is integrated with Skype for Business Online Connector, providing a single module for Teams PowerShell management. The Skype for Business PowerShell connector is now a part of Teams PowerShell module.
+
+Install the latest of Teams PowerShell
+
+`Install-Module -Name MicrosoftTeams`
+
+This command gets modules installed on computer using PowerShellGet
+
+`Get-InstalledModule`
+
+See all modules installed on the system
+
+`Get-Module -ListAvailable`
+
+***
+
+# Managing Microsoft Teams via PowerShell - Legacy
+
 The PowerShell Cmdlets for managing Microsoft Teams service are split between two powershell modules:
 
 ### Microsoft Teams PowerShell Module
